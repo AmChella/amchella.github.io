@@ -5,9 +5,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Chellapandi Soundarapandian — Technical Architect</title>
   <meta name="description" content="Portfolio of Chellapandi Soundarapandian — Technical Architect, Full-Stack Leader & Cloud Specialist." />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#4f46e5;--glass:rgba(255,255,255,0.04)}
-    *{box-sizing:border-box}
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #9aa4b2;
+      --accent: #4f46e5;
+      --glass: rgba(255, 255, 255, 0.04);
+    }
+    * {box-sizing:border-box}
     html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#e6eef8;background:linear-gradient(180deg,#071025 0%, #071527 60%);}
     .container{max-width:1100px;margin:36px auto;padding:28px}
     header{display:flex;gap:20px;align-items:center}
@@ -16,8 +23,6 @@
     .subtitle{color:var(--muted);margin-top:6px}
     .row{display:flex;gap:20px}
     .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;box-shadow:0 8px 30px rgba(2,6,23,0.6);}
-
-    /* layout */
     .left{flex:1;min-width:280px}
     .right{flex:2;min-width:320px}
     nav.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
@@ -26,8 +31,6 @@
     .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
 
     section{margin-top:18px}
-    .meta{display:flex;flex-direction:column;gap:8px}
-    .meta-item{display:flex;gap:10px;align-items:center;color:var(--muted)}
     .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
     .skill{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:#d8e6ff}
 
@@ -39,9 +42,11 @@
     .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
     .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02))}
 
-    footer{margin-top:28px;color:var(--muted);font-size:13px}
+    .languages,.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:10px;margin-top:10px}
+    .lang-item,.tool-item{display:flex;align-items:center;gap:6px;padding:6px 8px;background:var(--glass);border-radius:8px;font-size:14px;color:#d8e6ff}
+    .lang-item i,.tool-item i{font-size:18px;color:var(--accent)}
 
-    /* Responsive */
+    footer{margin-top:28px;color:var(--muted);font-size:13px}
     @media (max-width:880px){.row{flex-direction:column}.avatar{width:92px;height:92px}}
   </style>
 </head>
@@ -62,8 +67,9 @@
       <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end">
         <div style="text-align:right;color:var(--muted)">Chennai, Tamil Nadu</div>
         <div style="display:flex;gap:8px">
-          <a class="btn btn-ghost" href="mailto:2chellaa@gmail.com">2chellaa@gmail.com</a>
-          <a class="btn btn-ghost" href="https://linkedin.com/in/2chellaa" target="_blank">LinkedIn</a>
+          <a class="btn btn-ghost" href="mailto:2chellaa@gmail.com"><i class='bx bx-envelope'></i> Email</a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/2chellaa" target="_blank"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/2chellaa" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
         </div>
       </div>
     </header>
@@ -76,7 +82,7 @@
         </section>
 
         <section id="skills">
-          <h3 style="margin-top:14px">Key Skills</h3>
+          <h3>Key Skills</h3>
           <div class="skills">
             <span class="skill">Microservices</span>
             <span class="skill">System Design (HLD)</span>
@@ -92,13 +98,35 @@
           </div>
         </section>
 
+        <section>
+          <h3>Programming Languages</h3>
+          <div class="languages">
+            <div class="lang-item"><i class='bx bxl-java'></i> Java</div>
+            <div class="lang-item"><i class='bx bxl-javascript'></i> JavaScript</div>
+            <div class="lang-item"><i class='bx bxl-typescript'></i> TypeScript</div>
+            <div class="lang-item"><i class='bx bxl-python'></i> Python</div>
+            <div class="lang-item"><i class='bx bxl-php'></i> PHP</div>
+            <div class="lang-item"><i class='bx bxl-c-plus-plus'></i> C++</div>
+          </div>
+        </section>
+
+        <section>
+          <h3>Tools & Platforms</h3>
+          <div class="tools">
+            <div class="tool-item"><i class='bx bxl-aws'></i> AWS</div>
+            <div class="tool-item"><i class='bx bx-cloud'></i> Azure</div>
+            <div class="tool-item"><i class='bx bx-docker'></i> Docker</div>
+            <div class="tool-item"><i class='bx bx-cube-alt'></i> Kubernetes</div>
+            <div class="tool-item"><i class='bx bx-code-curly'></i> Git / GitHub</div>
+            <div class="tool-item"><i class='bx bx-test-tube'></i> Jenkins</div>
+            <div class="tool-item"><i class='bx bx-bar-chart-alt'></i> Grafana</div>
+            <div class="tool-item"><i class='bx bx-data'></i> MySQL / MongoDB</div>
+          </div>
+        </section>
+
         <section id="contact" style="margin-top:14px">
           <h3>Contact</h3>
-          <div class="meta">
-            <div class="meta-item"><strong>Phone:</strong>&nbsp;<span class="muted">+91 9585773377</span></div>
-            <div class="meta-item"><strong>Email:</strong>&nbsp;<span class="muted">2chellaa@gmail.com</span></div>
-            <div class="meta-item"><strong>LinkedIn:</strong>&nbsp;<a href="https://linkedin.com/in/2chellaa" target="_blank" style="color:inherit">linkedin.com/in/2chellaa</a></div>
-          </div>
+          <p class="muted">Available for remote and onsite architect opportunities.</p>
         </section>
 
         <section style="margin-top:14px">
@@ -116,25 +144,21 @@
               <div class="muted">Jul 2025 — Present</div>
               <p style="color:var(--muted);margin-top:8px">Test automation on legacy product and online editing tool. Leading engineering efforts and improving delivery quality.</p>
             </div>
-
             <div class="job">
               <h4>Engineering Manager — Learnship Technologies Pvt. Ltd., Chennai</h4>
               <div class="muted">Mar 2023 — Jul 2025</div>
               <p style="color:var(--muted);margin-top:8px">Led full‑stack & MERN teams, improved efficiency and delivery, instituted code review culture and system deployment best practices.</p>
             </div>
-
             <div class="job">
               <h4>Technical Lead — Amnet Systems Pvt. Ltd., Chennai</h4>
               <div class="muted">Aug 2021 — Mar 2023</div>
               <p style="color:var(--muted);margin-top:8px">Led migration of monolith to microservices, built PoCs and SaaS solutions using Agile practices.</p>
             </div>
-
             <div class="job">
               <h4>Technical Lead / Senior Software Engineer — TNQ Technologies</h4>
-              <div class="muted">Apr 2018 — Aug 2021 (Technical Lead) • Apr 2014 — Mar 2018 (Senior)</div>
+              <div class="muted">Apr 2018 — Aug 2021 (Lead) • Apr 2014 — Mar 2018 (Senior)</div>
               <p style="color:var(--muted);margin-top:8px">Designed architecture and CI/CD pipelines, mentored team members, and led full SDLC for multiple projects.</p>
             </div>
-
             <div class="job">
               <h4>Software Engineer — TNQ Technologies Pvt. Ltd.</h4>
               <div class="muted">Jul 2010 — Mar 2014</div>
@@ -151,25 +175,21 @@
               <div class="muted">03/2023 — Present</div>
               <div style="color:var(--muted);margin-top:6px">Built a scalable virtual classroom platform — improved course completion, implemented performance and monitoring best practices.</div>
             </div>
-
             <div class="project">
               <strong>Training Management</strong>
               <div class="muted">03/2023 — Present</div>
               <div style="color:var(--muted);margin-top:6px">Led development of training management system for enterprise customers with high adoption and measurable improvements in staff proficiency.</div>
             </div>
-
             <div class="project">
               <strong>Web Scraper</strong>
               <div class="muted">08/2021 — 03/2023</div>
               <div style="color:var(--muted);margin-top:6px">Automated data collection from 50+ sources using Python and Selenium; deployed with cloud automation to save significant manual effort.</div>
             </div>
-
             <div class="project">
               <strong>PageCentral Pro</strong>
               <div class="muted">07/2010 — 08/2021</div>
               <div style="color:var(--muted);margin-top:6px">Designed system architecture, implemented CI/CD, and improved performance and security for a publishing platform.</div>
             </div>
-
             <div class="project">
               <strong>The Agrarian Studies</strong>
               <div class="muted">07/2010 — 08/2021</div>
@@ -186,7 +206,6 @@
             <li>Delivered SaaS platform with 99.9% uptime</li>
           </ul>
         </section>
-
       </main>
     </div>
 
@@ -199,15 +218,6 @@
         <div style="text-align:right;color:var(--muted)">Resume source: Resume-Aug.pdf</div>
       </div>
     </footer>
-
   </div>
-  <script>
-    // small interaction: copy email
-    document.querySelectorAll('a[href^="mailto:"]').forEach(a=>{
-      a.addEventListener('click',()=>{
-        // nothing needed, keep default behaviour
-      })
-    })
-  </script>
 </body>
 </html>
