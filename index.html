@@ -1,1 +1,213 @@
-Hello World!
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chellapandi Soundarapandian — Technical Architect</title>
+  <meta name="description" content="Portfolio of Chellapandi Soundarapandian — Technical Architect, Full-Stack Leader & Cloud Specialist." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#4f46e5;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#e6eef8;background:linear-gradient(180deg,#071025 0%, #071527 60%);}
+    .container{max-width:1100px;margin:36px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:18px;background:linear-gradient(180deg,#1f2937,#111827);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:28px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    h1{margin:0;font-size:26px}
+    .subtitle{color:var(--muted);margin-top:6px}
+    .row{display:flex;gap:20px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;box-shadow:0 8px 30px rgba(2,6,23,0.6);}
+
+    /* layout */
+    .left{flex:1;min-width:280px}
+    .right{flex:2;min-width:320px}
+    nav.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#06b6d4);color:white}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    section{margin-top:18px}
+    .meta{display:flex;flex-direction:column;gap:8px}
+    .meta-item{display:flex;gap:10px;align-items:center;color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:#d8e6ff}
+
+    .timeline{display:flex;flex-direction:column;gap:14px}
+    .job{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border-left:4px solid rgba(79,70,229,0.12)}
+    .job h4{margin:0}
+    .job .muted{color:var(--muted);font-size:13px;margin-top:4px}
+
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02))}
+
+    footer{margin-top:28px;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:880px){.row{flex-direction:column}.avatar{width:92px;height:92px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="card row">
+      <div class="avatar">CS</div>
+      <div style="flex:1">
+        <h1>Chellapandi Soundarapandian</h1>
+        <div class="subtitle">Technical Architect • Full‑Stack Leader • Cloud & Microservices Specialist</div>
+        <nav class="links">
+          <a class="btn btn-primary" href="#contact">Contact</a>
+          <a class="btn btn-ghost" href="#experience">Experience</a>
+          <a class="btn btn-ghost" href="#projects">Projects</a>
+          <a class="btn btn-ghost" href="/Resume-Aug.pdf" target="_blank">Download Resume</a>
+        </nav>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+        <div style="text-align:right;color:var(--muted)">Chennai, Tamil Nadu</div>
+        <div style="display:flex;gap:8px">
+          <a class="btn btn-ghost" href="mailto:2chellaa@gmail.com">2chellaa@gmail.com</a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/2chellaa" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="row" style="margin-top:18px">
+      <aside class="left card">
+        <section id="about">
+          <h3>About</h3>
+          <p style="color:var(--muted);line-height:1.5">Technical Architect with 14+ years of experience in full‑stack development, microservices and cloud architecture. Experienced in system design, migration strategies, and leading engineering teams to deliver SaaS and enterprise products with strong focus on performance and reliability.</p>
+        </section>
+
+        <section id="skills">
+          <h3 style="margin-top:14px">Key Skills</h3>
+          <div class="skills">
+            <span class="skill">Microservices</span>
+            <span class="skill">System Design (HLD)</span>
+            <span class="skill">AWS</span>
+            <span class="skill">Kubernetes</span>
+            <span class="skill">Docker</span>
+            <span class="skill">Spring Boot</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">React</span>
+            <span class="skill">CI/CD</span>
+            <span class="skill">Kafka / RabbitMQ</span>
+            <span class="skill">MySQL / MongoDB</span>
+          </div>
+        </section>
+
+        <section id="contact" style="margin-top:14px">
+          <h3>Contact</h3>
+          <div class="meta">
+            <div class="meta-item"><strong>Phone:</strong>&nbsp;<span class="muted">+91 9585773377</span></div>
+            <div class="meta-item"><strong>Email:</strong>&nbsp;<span class="muted">2chellaa@gmail.com</span></div>
+            <div class="meta-item"><strong>LinkedIn:</strong>&nbsp;<a href="https://linkedin.com/in/2chellaa" target="_blank" style="color:inherit">linkedin.com/in/2chellaa</a></div>
+          </div>
+        </section>
+
+        <section style="margin-top:14px">
+          <h3>Education & Certifications</h3>
+          <div style="color:var(--muted)">BCA — Madurai Kamaraj University<br>Post Graduate Program in Cloud Computing — Caltech (Pursuing)</div>
+        </section>
+      </aside>
+
+      <main class="right">
+        <section id="experience" class="card">
+          <h3>Experience</h3>
+          <div class="timeline">
+            <div class="job">
+              <h4>Engineering Manager — TNQTech, Chennai</h4>
+              <div class="muted">Jul 2025 — Present</div>
+              <p style="color:var(--muted);margin-top:8px">Test automation on legacy product and online editing tool. Leading engineering efforts and improving delivery quality.</p>
+            </div>
+
+            <div class="job">
+              <h4>Engineering Manager — Learnship Technologies Pvt. Ltd., Chennai</h4>
+              <div class="muted">Mar 2023 — Jul 2025</div>
+              <p style="color:var(--muted);margin-top:8px">Led full‑stack & MERN teams, improved efficiency and delivery, instituted code review culture and system deployment best practices.</p>
+            </div>
+
+            <div class="job">
+              <h4>Technical Lead — Amnet Systems Pvt. Ltd., Chennai</h4>
+              <div class="muted">Aug 2021 — Mar 2023</div>
+              <p style="color:var(--muted);margin-top:8px">Led migration of monolith to microservices, built PoCs and SaaS solutions using Agile practices.</p>
+            </div>
+
+            <div class="job">
+              <h4>Technical Lead / Senior Software Engineer — TNQ Technologies</h4>
+              <div class="muted">Apr 2018 — Aug 2021 (Technical Lead) • Apr 2014 — Mar 2018 (Senior)</div>
+              <p style="color:var(--muted);margin-top:8px">Designed architecture and CI/CD pipelines, mentored team members, and led full SDLC for multiple projects.</p>
+            </div>
+
+            <div class="job">
+              <h4>Software Engineer — TNQ Technologies Pvt. Ltd.</h4>
+              <div class="muted">Jul 2010 — Mar 2014</div>
+              <p style="color:var(--muted);margin-top:8px">Worked on core application modules, cloud integrations, and release management.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="card" style="margin-top:14px">
+          <h3>Selected Projects</h3>
+          <div class="projects">
+            <div class="project">
+              <strong>Virtual Classroom</strong>
+              <div class="muted">03/2023 — Present</div>
+              <div style="color:var(--muted);margin-top:6px">Built a scalable virtual classroom platform — improved course completion, implemented performance and monitoring best practices.</div>
+            </div>
+
+            <div class="project">
+              <strong>Training Management</strong>
+              <div class="muted">03/2023 — Present</div>
+              <div style="color:var(--muted);margin-top:6px">Led development of training management system for enterprise customers with high adoption and measurable improvements in staff proficiency.</div>
+            </div>
+
+            <div class="project">
+              <strong>Web Scraper</strong>
+              <div class="muted">08/2021 — 03/2023</div>
+              <div style="color:var(--muted);margin-top:6px">Automated data collection from 50+ sources using Python and Selenium; deployed with cloud automation to save significant manual effort.</div>
+            </div>
+
+            <div class="project">
+              <strong>PageCentral Pro</strong>
+              <div class="muted">07/2010 — 08/2021</div>
+              <div style="color:var(--muted);margin-top:6px">Designed system architecture, implemented CI/CD, and improved performance and security for a publishing platform.</div>
+            </div>
+
+            <div class="project">
+              <strong>The Agrarian Studies</strong>
+              <div class="muted">07/2010 — 08/2021</div>
+              <div style="color:var(--muted);margin-top:6px">Built a full‑stack solution with payment gateway integration (CCAvenue), admin and publishing modules.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h3>Achievements & Awards</h3>
+          <ul style="color:var(--muted);margin:8px 0 0 18px">
+            <li>Increased course completion rate by 150% on Virtual Classroom</li>
+            <li>Led microservices migration that improved scalability & uptime</li>
+            <li>Delivered SaaS platform with 99.9% uptime</li>
+          </ul>
+        </section>
+
+      </main>
+    </div>
+
+    <footer class="card">
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+        <div>
+          <strong>Chellapandi Soundarapandian</strong><br>
+          Technical Architect • Full‑Stack Leader
+        </div>
+        <div style="text-align:right;color:var(--muted)">Resume source: Resume-Aug.pdf</div>
+      </div>
+    </footer>
+
+  </div>
+  <script>
+    // small interaction: copy email
+    document.querySelectorAll('a[href^="mailto:"]').forEach(a=>{
+      a.addEventListener('click',()=>{
+        // nothing needed, keep default behaviour
+      })
+    })
+  </script>
+</body>
+</html>
