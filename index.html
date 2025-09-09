@@ -6,44 +6,47 @@
   <title>Chellapandi Soundarapandian — Technical Architect</title>
   <meta name="description" content="Portfolio of Chellapandi Soundarapandian — Technical Architect, Full-Stack Leader & Cloud Specialist." />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0f1724;
-      --card: #0b1220;
-      --muted: #9aa4b2;
-      --accent: #4f46e5;
-      --glass: rgba(255, 255, 255, 0.04);
+      --bg: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --card: #f9fafb;
+      --glass: rgba(37,99,235,0.08);
     }
     * {box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#e6eef8;background:linear-gradient(180deg,#071025 0%, #071527 60%);}
+    html,body{height:100%;margin:0;font-family:'Manrope',sans-serif;color:var(--text);background:linear-gradient(180deg,#f0f4f9 0%, #ffffff 80%);} 
     .container{max-width:1100px;margin:36px auto;padding:28px}
     header{display:flex;gap:20px;align-items:center}
-    .avatar{width:120px;height:120px;border-radius:18px;background:linear-gradient(180deg,#1f2937,#111827);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:28px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-    h1{margin:0;font-size:26px}
+    .avatar{width:120px;height:120px;border-radius:50%;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.1)}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    h1{margin:0;font-size:28px;font-weight:700}
     .subtitle{color:var(--muted);margin-top:6px}
     .row{display:flex;gap:20px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;box-shadow:0 8px 30px rgba(2,6,23,0.6);}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
     .left{flex:1;min-width:280px}
     .right{flex:2;min-width:320px}
     nav.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
     a.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
     .btn-primary{background:linear-gradient(90deg,var(--accent),#06b6d4);color:white}
-    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .btn-ghost{background:transparent;border:1px solid rgba(0,0,0,0.1);color:var(--muted)}
 
     section{margin-top:18px}
     .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:#d8e6ff}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--text)}
 
     .timeline{display:flex;flex-direction:column;gap:14px}
-    .job{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border-left:4px solid rgba(79,70,229,0.12)}
+    .job{padding:12px;border-radius:10px;background:#f3f4f6;border-left:4px solid var(--accent)}
     .job h4{margin:0}
     .job .muted{color:var(--muted);font-size:13px;margin-top:4px}
 
     .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02))}
+    .project{padding:12px;border-radius:10px;background:#f3f4f6}
 
     .languages,.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:10px;margin-top:10px}
-    .lang-item,.tool-item{display:flex;align-items:center;gap:6px;padding:6px 8px;background:var(--glass);border-radius:8px;font-size:14px;color:#d8e6ff}
+    .lang-item,.tool-item{display:flex;align-items:center;gap:6px;padding:6px 8px;background:var(--glass);border-radius:8px;font-size:14px;color:var(--text)}
     .lang-item i,.tool-item i{font-size:18px;color:var(--accent)}
 
     footer{margin-top:28px;color:var(--muted);font-size:13px}
@@ -53,15 +56,15 @@
 <body>
   <div class="container">
     <header class="card row">
-      <div class="avatar">CS</div>
+      <div class="avatar"><img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Avatar"></div>
       <div style="flex:1">
         <h1>Chellapandi Soundarapandian</h1>
-        <div class="subtitle">Technical Architect • Full‑Stack Leader • Cloud & Microservices Specialist</div>
+        <div class="subtitle">Technical Architect • Full-Stack Leader • Cloud & Microservices Specialist</div>
         <nav class="links">
           <a class="btn btn-primary" href="#contact">Contact</a>
           <a class="btn btn-ghost" href="#experience">Experience</a>
           <a class="btn btn-ghost" href="#projects">Projects</a>
-          <a class="btn btn-ghost" href="/Resume-Aug.pdf" target="_blank">Download Resume</a>
+          <a class="btn btn-ghost" href="/Resume.pdf" target="_blank">Download Resume</a>
         </nav>
       </div>
       <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end">
@@ -78,7 +81,7 @@
       <aside class="left card">
         <section id="about">
           <h3>About</h3>
-          <p style="color:var(--muted);line-height:1.5">Technical Architect with 14+ years of experience in full‑stack development, microservices and cloud architecture. Experienced in system design, migration strategies, and leading engineering teams to deliver SaaS and enterprise products with strong focus on performance and reliability.</p>
+          <p style="color:var(--muted);line-height:1.5">Technical Architect with 14+ years of experience in full-stack development, microservices and cloud architecture. Experienced in system design, migration strategies, and leading engineering teams to deliver SaaS and enterprise products with strong focus on performance and reliability.</p>
         </section>
 
         <section id="skills">
@@ -95,6 +98,8 @@
             <span class="skill">CI/CD</span>
             <span class="skill">Kafka / RabbitMQ</span>
             <span class="skill">MySQL / MongoDB</span>
+            <span class="skill">People Management</span>
+            <span class="skill">Delivery & Automation</span>
           </div>
         </section>
 
@@ -107,6 +112,7 @@
             <div class="lang-item"><i class='bx bxl-python'></i> Python</div>
             <div class="lang-item"><i class='bx bxl-php'></i> PHP</div>
             <div class="lang-item"><i class='bx bxl-c-plus-plus'></i> C++</div>
+            <div class="lang-item"><i class='bx bxl-go-lang'></i> Go</div>
           </div>
         </section>
 
@@ -121,6 +127,8 @@
             <div class="tool-item"><i class='bx bx-test-tube'></i> Jenkins</div>
             <div class="tool-item"><i class='bx bx-bar-chart-alt'></i> Grafana</div>
             <div class="tool-item"><i class='bx bx-data'></i> MySQL / MongoDB</div>
+            <div class="tool-item"><i class='bx bx-layer'></i> Helm</div>
+            <div class="tool-item"><i class='bx bx-up-arrow-alt'></i> Tilt</div>
           </div>
         </section>
 
@@ -147,7 +155,7 @@
             <div class="job">
               <h4>Engineering Manager — Learnship Technologies Pvt. Ltd., Chennai</h4>
               <div class="muted">Mar 2023 — Jul 2025</div>
-              <p style="color:var(--muted);margin-top:8px">Led full‑stack & MERN teams, improved efficiency and delivery, instituted code review culture and system deployment best practices.</p>
+              <p style="color:var(--muted);margin-top:8px">Led full-stack & MERN teams, improved efficiency and delivery, instituted code review culture and system deployment best practices.</p>
             </div>
             <div class="job">
               <h4>Technical Lead — Amnet Systems Pvt. Ltd., Chennai</h4>
@@ -193,7 +201,7 @@
             <div class="project">
               <strong>The Agrarian Studies</strong>
               <div class="muted">07/2010 — 08/2021</div>
-              <div style="color:var(--muted);margin-top:6px">Built a full‑stack solution with payment gateway integration (CCAvenue), admin and publishing modules.</div>
+              <div style="color:var(--muted);margin-top:6px">Built a full-stack solution with payment gateway integration (CCAvenue), admin and publishing modules.</div>
             </div>
           </div>
         </section>
@@ -213,9 +221,9 @@
       <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
         <div>
           <strong>Chellapandi Soundarapandian</strong><br>
-          Technical Architect • Full‑Stack Leader
+          Technical Architect • Full-Stack Leader
         </div>
-        <div style="text-align:right;color:var(--muted)">Resume source: Resume-Aug.pdf</div>
+        <div style="text-align:right;color:var(--muted)">Resume source: Resume.pdf</div>
       </div>
     </footer>
   </div>
